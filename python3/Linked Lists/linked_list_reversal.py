@@ -8,7 +8,7 @@ class ListNode:
         self.next = next
 """
 
-
+ # Iterative reversal
 def linked_list_reversal(head: ListNode) -> ListNode:
     curr_node, prev_node = head, None
     # Reverse the direction of each node's pointer until 'curr_node' 
