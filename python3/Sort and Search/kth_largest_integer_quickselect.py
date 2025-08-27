@@ -5,7 +5,7 @@ from typing import List
 def kth_largest_integer_quickselect(nums: List[int], k: int) -> int:
     return quickselect(nums, 0, len(nums) - 1, k)
 
-def quickselect(nums: List[int], left: int, right: int, k: int) -> None:
+def quickselect(nums: List[int], left: int, right: int, k: int) -> int:
     n = len(nums)
     if left >= right:
         return nums[left]
